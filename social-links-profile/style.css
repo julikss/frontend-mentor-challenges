@@ -1,0 +1,80 @@
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    padding: 4rem;
+  }
+
+  .container {
+    background-color: hsl(0, 0%, 12%);
+    max-width: 350px;
+    margin: auto;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 2.5rem;
+  }
+
+  img {
+    width: 30%;
+    border-radius: 5rem;
+  }
+
+  h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+  }
+
+  h2 {
+    color: hsl(75, 94%, 57%);
+    font-weight: 700;
+    font-size: medium;
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: medium;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    background-color: hsl(0, 0%, 20%);
+    margin: 1rem 2rem 0 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  li:hover {
+    color: hsl(75, 94%, 57%);
+    cursor: pointer;
+  }
+
+  @media (min-width: 375px) {
+    body {
+      font-size: 12px;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    h2 {
+      font-size: 1rem;
+    }
+  
+    li {
+      font-size: 0.9rem;
+      padding: 0.7rem;
+    }
+  
+    .container {
+      padding: 2rem 1rem;
+    }
+  }
+  
