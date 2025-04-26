@@ -1,0 +1,176 @@
+:root {
+  --bg-color: hsl(221, 100%, 96%);
+  --primary: hsl(252, 100%, 67%);
+  --primary-dark: hsl(241, 81%, 54%);
+  --dark-text: hsl(224, 30%, 27%);
+  --light-text: hsl(241, 100%, 89%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 47rem;
+  margin: auto;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 4px 12px var(--light-text);
+}
+
+.result-div {
+  color: var(--light-text);
+  background: linear-gradient(var(--primary), var(--primary-dark));
+  text-align: center;
+  padding: 2rem;
+  width: 50%;
+  display: flex;
+  border-radius: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result-div h1 {
+  color: var(--white);
+  margin: 1rem 0 0.5rem;
+}
+
+.result-div h2 {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.grade-div {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grade-div h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 800;
+}
+
+.grade-div p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.summary-div {
+  background-color: var(--white);
+  padding: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-div h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--dark-text);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f7ff;
+  padding: 0.8rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.score {
+  font-weight: 700;
+  color: var(--dark-text);
+}
+
+.max-score {
+  color: hsl(221, 9%, 56%);
+}
+
+.reaction {
+  background: hsla(0, 100%, 67%, 0.12);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background: hsla(39, 100%, 56%, 0.12);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background: hsla(166, 100%, 37%, 0.12);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background: hsla(234, 85%, 45%, 0.12);
+  color: hsl(234, 85%, 45%);
+}
+
+.btn-continue {
+  background-color: var(--dark-text);
+  color: var(--white);
+  border: none;
+  border-radius: 2rem;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.btn-continue:hover {
+  background: linear-gradient(var(--primary), var(--primary-dark));
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: none;
+  }
+
+  .container { 
+    flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .result-div, .summary-div {
+    border-radius: 0 0 1.5rem 1.5rem;
+    padding: 2rem;
+    width: auto;
+  }
+}
